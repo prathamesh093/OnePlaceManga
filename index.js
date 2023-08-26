@@ -33,3 +33,12 @@ $( document ).ready(function() {
     
     
 });
+
+$(document).ready(function() {
+    var animateButton = $('#animatebutton');
+    
+    animateButton.click(function() {
+      
+        window.location.href = './pages/Authentication/Auth.html'; // Replace 'next_page.html' with the actual URL of the next page
+    });
+});
