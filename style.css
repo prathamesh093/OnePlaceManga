@@ -88,7 +88,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
  
 @font-face {
 	font-family: myFont;
-	src: url(./onepiecefont.ttf);
+	src: url(./assets/onepiecefont.ttf);
 }
 .banner-heading{  
 	font-family: myFont;
