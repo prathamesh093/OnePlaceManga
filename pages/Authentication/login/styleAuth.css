@@ -10,17 +10,45 @@ body{
     justify-content:center ;
     align-items: center;
     min-height: 100vh;
-    background: url(./authBack.jpg) no-repeat; 
+    background: url(./authlog.jpg) no-repeat; 
     background-size: cover;
     background-position: center; 
     
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2; 
+    display: flex; 
+}
+
+.back-link {
+    text-decoration: none;
+    color: #F6F9FC;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid #3102ff;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+body:hover .back-button {
+    display: block;
+}
+
+body:hover .back-link:hover {
+    background-color: #ddd;
+    color: #3102ff;
 }
 
 .wrapper{
     width: 420px;
     background:transparent;
     border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(7px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     color: #fff ;
     border-radius: 10px;
@@ -30,6 +58,13 @@ body{
 .wrapper h1{
     font-size: 30px;
     text-align: center;   
+    font-family: myfont;
+    word-spacing: normal;
+}
+@font-face {
+	font-family: myFont;
+    word-spacing: 10px;
+	src: url(./onepiecefont.ttf);
 }
 
 .wrapper .input-box{
@@ -88,7 +123,14 @@ body{
     cursor: pointer;
     font-size: 16px;
     color: #333;
-    font-family: 600;
+    font-weight: 600; 
+    transition: background-color 0.3s ease; 
+}
+
+.wrapper .btn:hover{
+    background-color: green; 
+    color: white; 
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.2); 
 }
 
 .wrapper .register-link{
