@@ -39,6 +39,6 @@ $(document).ready(function() {
     
     animateButton.click(function() {
       
-        window.location.href="./pages/Authentication/login/Auth.html"; // Replace 'next_page.html' with the actual URL of the next page
+        window.location.href="./pages/Authentication/login/Auth.html";
     });
 });
